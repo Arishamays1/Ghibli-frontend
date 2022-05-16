@@ -1,5 +1,4 @@
-import '../styles/home.css'
-import '../styles/App.css'
+
 const Search=(props)=>{
     
     return(
