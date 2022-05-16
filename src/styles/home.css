@@ -11,6 +11,7 @@ color: white;
 .searchbarFlex{
 display: flex ;
 justify-content: center;
+padding-bottom: 100px;
 }
 
 .searchBar{
@@ -20,21 +21,26 @@ justify-content: center;
     border: #6EB49D;
     color: white;
     font-size: 20px;
-    font-family: 'Amiri', serif;
+    font-family: 'Patrick Hand', cursive;
 
 }
+
 .showpg{
-    display: flex;
-    padding:30px;
-    justify-content: space-between;
+display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+  
+    
+
     
 }
+
 .eachMov{
     border: double 15px #8FBC94;
     background-color: #6EB49D;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
     font-size: 15px;
     font-family: 'Patrick Hand', cursive;
-    padding: 10px;
+    padding: 10px; 
+    grid-gap: 5px;
 }
