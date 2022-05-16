@@ -1,5 +1,7 @@
 import '../styles/home.css'
 import { useEffect, useState } from "react";
+import '../styles/searchNav.css'
+import '../styles/App.css'
 
 export default function List() {
   const [film, setFilm] = useState(null);
@@ -17,11 +19,18 @@ export default function List() {
 
   const loaded = () => {
     return film.map((film, idx) => ( 
-      <div className='showpg' key={idx}>
-           <div className='eachMov'> 
+
+      <div className='homepg' key={idx}>
+       
+          <div className='child'> 
+          <div className='eachMov'> 
               <h1>{film.title}</h1>
-          <img className="gImage" src={film.image} alt={film.name} />
+              <img className="gImage" src={film.image} alt={film.name} />
+          </div>
+      
         </div>
+       
+           
         </div>
     ));
   };
